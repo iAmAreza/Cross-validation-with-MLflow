@@ -1,0 +1,15 @@
+artifact_uri: file:///home/reza/Desktop/Cross%20validation%20mlflow/model/mlruns/0/0bb311be5ed849cdb29e4c9c372cb8e4/artifacts
+end_time: 1740128756710
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0bb311be5ed849cdb29e4c9c372cb8e4
+run_name: placid-shark-300
+run_uuid: 0bb311be5ed849cdb29e4c9c372cb8e4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740128750663
+status: 3
+tags: []
+user_id: reza
