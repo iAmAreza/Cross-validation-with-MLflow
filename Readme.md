@@ -134,7 +134,41 @@ For a deeper understanding of **cross-validation**, check out this detailed [blo
 
 ---
 
+## 📦 Model Registration with MLflow
+
+Model Registration in **MLflow** refers to **storing a trained machine learning model** in the **Model Registry**, which acts as a **centralized repository** for **model management**. It allows you to **version models**, **track model lineage**, and **manage model lifecycle stages** (**e.g., Staging, Production, Archived**).
+
+---
+
+### ✅ **Need for MLflow Model Registry**
+
+#### 1. 🚦 **Version Control:**
+- **Every registered model** is **assigned a version** (**v1**, **v2**, **v3**, ...).
+- Helps to **track improvements** and **changes to models** over **time**.
+- Allows **rollback** to **previous versions** if **newer models underperform**.
+
+#### 2. 🔄 **Lifecycle Management:**
+- Models can be **transitioned through stages**, including:
+  - **None:** The model is **registered** but **not ready for use**.
+  - **Staging:** The model is **under testing or validation**.
+  - **Production:** The model is **approved and ready for deployment**.
+  - **Archived:** The model is **retired but kept for reference**.
+
+#### 3. 🚀 **Model Deployment:**
+- **Registered models** can be **deployed directly** using **MLflow serving**.
+- Supports **serving models as REST APIs** with **version control**.
+
+#### 4. 🤝 **Facilitate Collaboration:**
+- Provides a **central place** for **data scientists**, **ML engineers**, and **stakeholders** to **view and manage models**.
+- **Team members** can **review model performance**, **test new versions**, and **approve deployment**.
+
+![model Registry](images/modelRegistry.png)
+The above image shows the **saved version** of the **RandomForest model** in the **Model Registry**.
+
+---
+
 ## 💡 **Conclusion**
 
-This project demonstrates how **cross-validation** combined with **MLflow** can enhance the **model evaluation process** by providing **comprehensive insights** into **model performance** across multiple folds. By visualizing metrics, tracking hyperparameters, and storing artifacts, **MLflow** proves to be an invaluable tool for **machine learning experiments**.
+This **project demonstrates** how **cross-validation** combined with **MLflow** can **enhance the model evaluation process** by providing **comprehensive insights** into **model performance** across **multiple folds**. By **visualizing metrics**, **tracking hyperparameters**, and **storing artifacts**, **MLflow** proves to be an **invaluable tool** for **machine learning experiments**. Additionally, the **model is saved into the Model Registry** for **further use and deployment**.
+
 
